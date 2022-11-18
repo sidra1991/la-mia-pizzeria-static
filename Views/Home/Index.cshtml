@@ -1,7 +1,5 @@
 ﻿@*
-Dobbiamo realizzare un’applicazione web che ci aiuti a gestire la nostra pizzeria.
-Abbiamo bisogno di creare la nostra prima pagina (index) dove mostriamo tutte le pizze che prepariamo.
-Una pizza avrà le seguenti informazioni :
+
 un nome
 una descrizione
 una foto
@@ -9,15 +7,20 @@ un prezzo
 Modifichiamo quindi la view Index.cshtml generata in automatico da .Net Core scrivendo l’html che serve a noi per mostrare l’elenco delle pizze (possiamo creare una tabella con bootstrap o una qualche grafica a nostro piacimento che mostri l’elenco delle pizze...proviamo un po’ di creatività se vogliamo!)
 Buon lavoro!! :faccia_leggermente_sorridente:*@
 
+@{
+    Random rand = new Random();
+}
+
 
 <h1>le mie pizze</h1>
-<div class="container-fluid row">
+<div class="container-fluid row" style="margin-top:20px; border:1px solid black; background-color:antiquewhite">
     <div class="col-2" >
     </div>
     <div class="col-8" >
             <img src="https://picsum.photos/200/300?random=7" alt="">
             <div>
             <h2> margherita </h2>
+            <h3 style="display:inline;" > prezzo </h3> <span> @rand.Next(1, 10) €</span>
             <div>
                 <h3> descrizione </h3>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero maiores quis cum laboriosam quisquam esse hic sequi aspernatur eligendi ducimus, dolorum odio autem? Earum, neque delectus. Vitae animi quod aliquam.
@@ -27,13 +30,14 @@ Buon lavoro!! :faccia_leggermente_sorridente:*@
     <div class="col-2" >
     </div>
 </div>
-<div class="container-fluid row">
+<div class="container-fluid row" style="margin-top:20px; border:1px solid black; background-color:antiquewhite">
     <div class="col-2" >
     </div>
     <div class="col-8" >
             <img src="https://picsum.photos/200/300?random=6" alt="">
             <div>
             <h2> margherita </h2>
+            <h3 style="display:inline;" > prezzo </h3> <span> @rand.Next(1, 10) €</span>
             <div>
                 <h3> descrizione </h3>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero maiores quis cum laboriosam quisquam esse hic sequi aspernatur eligendi ducimus, dolorum odio autem? Earum, neque delectus. Vitae animi quod aliquam.
@@ -43,13 +47,14 @@ Buon lavoro!! :faccia_leggermente_sorridente:*@
     <div class="col-2" >
     </div>
 </div>
-<div class="container-fluid row">
+<div class="container-fluid row" style="margin-top:20px; border:1px solid black; background-color:antiquewhite">
     <div class="col-2" >
     </div>
     <div class="col-8" >
             <img src="https://picsum.photos/200/300?random=5" alt="">
             <div>
             <h2> margherita </h2>
+            <h3 style="display:inline;" > prezzo </h3> <span> @rand.Next(1, 10) €</span>
             <div>
                 <h3> descrizione </h3>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero maiores quis cum laboriosam quisquam esse hic sequi aspernatur eligendi ducimus, dolorum odio autem? Earum, neque delectus. Vitae animi quod aliquam.
@@ -59,13 +64,14 @@ Buon lavoro!! :faccia_leggermente_sorridente:*@
     <div class="col-2" >
     </div>
 </div>
-<div class="container-fluid row">
+<div class="container-fluid row" style="margin-top:20px; border:1px solid black; background-color:antiquewhite">
     <div class="col-2" >
     </div>
     <div class="col-8" >
             <img src="https://picsum.photos/200/300?random=4" alt="">
             <div>
             <h2> margherita </h2>
+            <h3 style="display:inline;" > prezzo </h3> <span> @rand.Next(1, 10) €</span>
             <div>
                 <h3> descrizione </h3>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero maiores quis cum laboriosam quisquam esse hic sequi aspernatur eligendi ducimus, dolorum odio autem? Earum, neque delectus. Vitae animi quod aliquam.
@@ -75,13 +81,14 @@ Buon lavoro!! :faccia_leggermente_sorridente:*@
     <div class="col-2" >
     </div>
 </div>
-<div class="container-fluid row">
+<div class="container-fluid row" style="margin-top:20px; border:1px solid black; background-color:antiquewhite">
     <div class="col-2" >
     </div>
     <div class="col-8" >
             <img src="https://picsum.photos/200/300?random=3" alt="">
             <div>
             <h2> margherita </h2>
+            <h3 style="display:inline;" > prezzo </h3> <span> @rand.Next(1, 10) €</span>
             <div>
                 <h3> descrizione </h3>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero maiores quis cum laboriosam quisquam esse hic sequi aspernatur eligendi ducimus, dolorum odio autem? Earum, neque delectus. Vitae animi quod aliquam.
@@ -91,13 +98,14 @@ Buon lavoro!! :faccia_leggermente_sorridente:*@
     <div class="col-2" >
     </div>
 </div>
-<div class="container-fluid row">
+<div class="container-fluid row" style="margin-top:20px; border:1px solid black; background-color:antiquewhite">
     <div class="col-2" >
     </div>
     <div class="col-8" >
             <img src="https://picsum.photos/200/300?random=2" alt="">
             <div>
             <h2> margherita </h2>
+           <h3 style="display:inline;" > prezzo </h3> <span> @rand.Next(1, 10) €</span>
             <div>
                 <h3> descrizione </h3>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero maiores quis cum laboriosam quisquam esse hic sequi aspernatur eligendi ducimus, dolorum odio autem? Earum, neque delectus. Vitae animi quod aliquam.
@@ -107,13 +115,14 @@ Buon lavoro!! :faccia_leggermente_sorridente:*@
     <div class="col-2" >
     </div>
 </div>
-<div class="container-fluid row">
+<div class="container-fluid row" style="margin-top:20px; border:1px solid black; background-color:antiquewhite">
     <div class="col-2" >
     </div>
     <div class="col-8" >
             <img src="https://picsum.photos/200/300?random=1" alt="">
             <div>
             <h2> margherita </h2>
+            <h3 style="display:inline;" > prezzo </h3> <span> @rand.Next(1, 10) €</span>
             <div>
                 <h3> descrizione </h3>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero maiores quis cum laboriosam quisquam esse hic sequi aspernatur eligendi ducimus, dolorum odio autem? Earum, neque delectus. Vitae animi quod aliquam.
